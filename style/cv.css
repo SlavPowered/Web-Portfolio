@@ -1,0 +1,34 @@
+html{
+    font-family:Arial, Helvetica, sans-serif
+}
+body{
+    border:solid; 
+    border-color: #5a002c;
+    width:50%;
+} 
+
+#highest{
+    display: flex;
+    height:110vh;
+}
+.section-head{
+    padding-left: 0.5ex;
+    background-color: #5a002c;
+    color:pink
+}
+#my-photo{
+    height: 225px;
+    width: 225px;
+    border:solid;
+    margin-top: 1ex;
+}
+
+#side-bar{
+    background-color: #5a002c;
+    color: pink;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#main-part{
+    color:#5a002c;
+}
