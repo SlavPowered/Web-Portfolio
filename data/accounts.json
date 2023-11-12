@@ -1,16 +1,32 @@
 {
-    "accounts":[
+    "accounts": [
         {
             "username": "john.doe",
-            "password": "1234"
+            "password": "1234",
+            "fname": "John",
+            "lname": "Doe",
+            "age": "44"
         },
         {
             "username": "shalong",
-            "password": "333"
+            "password": "333",
+            "fname": "Shalong",
+            "lname": "Dee",
+            "age": "19"
         },
         {
-            "username":"agora123",
-            "password":"66652"
+            "username": "agora123",
+            "password": "66652",
+            "fname": "Agora",
+            "lname": "Watts",
+            "age": "27"
+        },
+        {
+            "username": "johnny.doe",
+            "password": "123",
+            "fname": "Johnny",
+            "lname": "Bravo",
+            "age": "22"
         }
     ]
 }

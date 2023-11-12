@@ -3,6 +3,8 @@
     <head>
         <title>Sign Up</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="../style/common.css">
+        <link rel="stylesheet" href="../style/forms.css">
     </head>
     <body>
         <form action="../backend/signup.php" method="POST" id="signup-form">
@@ -17,7 +19,7 @@
             <label>Password<br></label>
             <input type="password" name="password" id="password" required><br>
             <label>Confirm Password<br></label>
-            <input type="password" id="password-conf" required><span id="pass-span" class="empty"></span><br><br>
+            <input type="password" id="password-conf" style="margin-right:1em;" required><span id="pass-span" class="empty"></span><br><br>
             <button type="submit">Sign Up</button>
             <button type="reset">Clear</button>
         </form>

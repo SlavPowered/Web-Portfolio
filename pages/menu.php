@@ -3,7 +3,7 @@
     if (!isset($_SESSION["user"])){
         header("Location:../index.html");
     }else{
-        $user = $_SESSION["user"];
+        $name = $_SESSION["name"];
     }
 ?>
 
@@ -16,7 +16,7 @@
     <header>
         <div style="display: flex">
             <h1>Menu</h1>
-            <h3">Welcome <?php echo $user?></h3>
+            <h3>Welcome <?php echo $name?></h3>
         </div>
     </header>
     <body>

@@ -19,9 +19,11 @@ $user_found = false;
 for($i = 0; $i < count($acc_file["accounts"]); $i++){
     $user = $acc_file["accounts"][$i]["username"];
     $pass = $acc_file["accounts"][$i]["password"];
+    $name = $acc_file["accounts"][$i]["fname"];
     if ($user == $inpt_username){
         if ($pass == $inpt_password){
             $_SESSION["user"] = $user;
+            $_SESSION["name"] = $name;
             header("Location:../pages/menu.php");
             $user_found = true;
             break;
