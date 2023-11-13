@@ -4,6 +4,8 @@
         header("Location:../index.html");
     }
 
+    $name = $_SESSION["name"];
+
 ?>
 <meta charset="utf-8">
 <html>
@@ -11,11 +13,17 @@
         <title>CV</title>
         <link rel="stylesheet" href="../style/cv.css">
     </head>
-    <div id="navbar">
-        <a href="./menu.php">Menu</a>
-        <a href="./gallery.php">Gallery</a>
-        <a href="./contact.php">Contact Us</a>
-    </div>
+    <header>
+        <div id="navbar">
+            <a href="./menu.php">Menu</a>
+            <a href="./gallery.php">Gallery</a>
+            <a href="./contact.php">Contact Us</a>
+        </div>
+        <div id="logout">
+            <p>Welcome, <?php echo $name;?></p>
+            <a href="../backend/logout.php">Logout</a>
+        </div>
+    </header>
     <body>
         <div id="highest">
             <div id="side-bar">

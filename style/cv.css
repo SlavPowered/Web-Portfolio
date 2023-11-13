@@ -32,3 +32,45 @@ body{
 #main-part{
     color:#5a002c;
 }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5a002c;
+    padding: 10px;
+}
+
+#navbar a {
+    background-color: #5a002c;
+    color: pink;
+    text-decoration: none;
+    height: 2em;
+    width: 5em;
+}
+
+#navbar a:hover {
+    background-color: pink;
+    color: #5a002c;
+}
+
+#logout {
+    color: pink;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#logout p {
+    margin-right: 10px;
+}
+
+#logout a {
+    color: pink;
+    text-decoration: none;
+}

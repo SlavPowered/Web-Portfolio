@@ -4,6 +4,7 @@
     if(!isset($_SESSION["user"])){
         header("Location:../index.html");
     }
+    $name = $_SESSION["name"];
 ?>
 
 
@@ -14,16 +15,23 @@
     <title>Contact Us</title>
 </head>
 
-<body>
-    <h2>Phone: 81-951-523</h1>
-    <h2>Email: hussein.fadel03@lau.edu</h1>
-    <h3>Links:</h3>
+<body style="display: flex;">
+    <div>
+        <h2>Phone: 81-951-523</h2>
+        <h2>Email: hussein.fadel03@lau.edu</h2>
+        <h3>Links:</h3>
         <div id="links">
-        <a href="./menu.php">Menu</a>
-        <a href="./gallery.php">Gallery</a>
-        <a href="./cv.php">CV</a>
+            <a href="./menu.php">Menu</a>
+            <a href="./gallery.php">Gallery</a>
+            <a href="./cv.php">CV</a>
+        </div>
+    </div>
+    <div id="logout" style="margin-left: auto;">
+        <p>Welcome, <?php echo $name;?></p>
+        <a href="../backend/logout.php">Logout</a>
     </div>
 </body>
+
 
 </html>
 

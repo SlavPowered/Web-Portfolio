@@ -14,15 +14,16 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="../style/logout.css">
     </head>
-    <header>
+    <header style="display: flex; justify-content: space-between; align-items: center;">
         <div id="header">
             <h1>Menu</h1>
-            <div id="logout">
-                <span>Welcome, <?php echo $name;?></span>
-                <a href="../backend/logout.php">Logout</button>
-            </div>
+        </div>
+        <div id="logout" style="margin-left: auto;">
+            <p style="display: inline;">Welcome, <?php echo $name;?></p>
+            <a href="../backend/logout.php" style="display: inline-block;">Logout</a>
         </div>
     </header>
+
     <body>
         <a href="./gallery.php" class="menu-link">
             <div class="link-container">
@@ -82,5 +83,16 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
+    }
+
+    #logout {
+        
+    }
+    #logout p{
+        display: inline;
+    }
+
+    #logout a{
+        display: inline-block;
     }
 </style>
