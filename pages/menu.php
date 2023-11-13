@@ -12,11 +12,15 @@
     <head>
         <title>Menu</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="../style/logout.css">
     </head>
     <header>
-        <div style="display: flex">
+        <div id="header">
             <h1>Menu</h1>
-            <h3>Welcome <?php echo $name?></h3>
+            <div id="logout">
+                <span>Welcome <?php echo $name;?></span>
+                <a href="../backend/logout.php">Logout</button>
+            </div>
         </div>
     </header>
     <body>
@@ -74,5 +78,9 @@
         transform:translateX(20%);
     }
 
-    
+    #header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
 </style>

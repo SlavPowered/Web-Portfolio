@@ -15,8 +15,8 @@
     $images = json_decode($file,true);
     function render_image($dir, $img_name) {
         echo "<div class='img-container'>
-            <a href='./../assets/$img_name'>
-                <img src='./../assets/$img_name' class='image'>
+            <a href='./../gallery/$img_name'>
+                <img src='./../gallery/$img_name' class='image'>
             </a>
         </div>";
     }
