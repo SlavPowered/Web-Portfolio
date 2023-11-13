@@ -19,7 +19,7 @@ $user_found = false;
 for($i = 0; $i < count($acc_file["accounts"]); $i++){
     $user = $acc_file["accounts"][$i]["username"];
     $pass = $acc_file["accounts"][$i]["password"];
-    $name = $acc_file["accounts"][$i]["fname"];
+    $name = $acc_file["accounts"][$i]["fname"] ." ". $acc_file["accounts"][$i]["lname"];
     if ($user == $inpt_username){
         if ($pass == $inpt_password){
             $_SESSION["user"] = $user;

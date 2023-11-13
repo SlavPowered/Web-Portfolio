@@ -18,7 +18,7 @@
         <div id="header">
             <h1>Menu</h1>
             <div id="logout">
-                <span>Welcome <?php echo $name;?></span>
+                <span>Welcome, <?php echo $name;?></span>
                 <a href="../backend/logout.php">Logout</button>
             </div>
         </div>

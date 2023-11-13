@@ -1,32 +1,20 @@
 {
     "accounts": [
         {
-            "username": "john.doe",
-            "password": "1234",
-            "fname": "John",
-            "lname": "Doe",
-            "age": "44"
+            "username": "armen123",
+            "password": "555",
+            "fname": "Armen",
+            "lname": "Tatian",
+            "age": "2003-06-13",
+            "sex": "Other"
         },
         {
-            "username": "shalong",
-            "password": "333",
-            "fname": "Shalong",
-            "lname": "Dee",
-            "age": "19"
-        },
-        {
-            "username": "agora123",
-            "password": "66652",
-            "fname": "Agora",
-            "lname": "Watts",
-            "age": "27"
-        },
-        {
-            "username": "johnny.doe",
-            "password": "123",
+            "username": "bravo999",
+            "password": "999",
             "fname": "Johnny",
             "lname": "Bravo",
-            "age": "22"
+            "age": "1999-02-03",
+            "sex": "Male"
         }
     ]
 }

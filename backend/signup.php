@@ -17,7 +17,8 @@ $accounts = json_decode($file, true);
 
 $fname = $_POST["fname"];
 $lname = $_POST["lname"];
-$age   = $_POST["age"];
+$age   = $_POST["birthdate"];
+$sex   = $_POST["sex"];
 $username = $_POST["username"];
 $password = $_POST["password"];
 
@@ -44,7 +45,8 @@ $newUser = array(
     "password"=> $password,
     "fname"=> ucwords($fname),
     "lname"=> ucwords($lname),
-    "age"=> $age
+    "age"=> $age,
+    "sex"=> $sex,
 );
 
 $accounts["accounts"][] = $newUser;
