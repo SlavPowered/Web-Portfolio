@@ -7,7 +7,7 @@ $inpt_password = $_POST["password"];
 
 
 try{
-    $file = file_get_contents(dirname(__FILE__) . "\\..\\data\\accounts.json");
+    $file = file_get_contents(dirname(__FILE__) . "/../data/accounts.json");
 }catch(Exception $e){
     echo "<h1>Couldnt open Json file</h1>";
 }
@@ -29,13 +29,16 @@ for($i = 0; $i < count($acc_file["accounts"]); $i++){
             break;
         }else{
             echo "<h1>Wrong Password</h1>";
+            echo "<a href='../index.html'>Login</a>";
+            exit();
         }
     }
 }
 
 if(!$user_found){
     echo "<h1>User Not Found</h1>";
-    header("Location:../index.html");
+    echo "<a href='../index.html'>Login</a>";
+    exit();
 }
 ?>
 
